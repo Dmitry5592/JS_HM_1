@@ -2,12 +2,12 @@
 <html>
 <body>
     <h1>Веб страница</h1>
-    <p>Домашняя работа 4*</p>
+<p>Домашняя работа 4*</p>
 <script>
 
 function checkAge(age){
 
-    if(Number.isNaN(age)) {
+    if((typeof(Number(age))!='number')||(isNaN(Number(age))) || age=='' || age==' ') {
         alert("EROR")
     } else {
 
@@ -22,7 +22,7 @@ function checkAge(age){
         }
     } 
 }
-checkAge(prompt(`Ваш возраст?`))  
+checkAge(prompt(`Ваш возраст?`,'18')) 
 </script>
 </body>
 </html>

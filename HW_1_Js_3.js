@@ -1,10 +1,11 @@
+
+
 function checkAge(age){
 
 
-    if(Number.isNaN(Number(age))) {
+    if((typeof(Number(age))!='number')||(isNaN(Number(age))) || age=='' || age==' ') {
         console.log("EROR")
     } else {
-
         if(age < 18) {
         console.log(`"You don't have access cause your age is"  age  "It's less then"`)
         } else if(age >= 18 && age < 60) {
@@ -16,5 +17,5 @@ function checkAge(age){
         }
     } 
 }
-       checkAge ('вв')
+       checkAge ('')
      
