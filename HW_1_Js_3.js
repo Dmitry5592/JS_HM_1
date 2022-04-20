@@ -1,7 +1,7 @@
 function checkAge(age){
 
 
-    if(Number.isNaN(age)) {
+    if(Number.isNaN(Number(age))) {
         console.log("EROR")
     } else {
 
@@ -16,8 +16,5 @@ function checkAge(age){
         }
     } 
 }
-       checkAge ('99')
-       checkAge (17)
-       checkAge (21)
-       checkAge (18)
-       checkAge (99)
+       checkAge ('вв')
+     
