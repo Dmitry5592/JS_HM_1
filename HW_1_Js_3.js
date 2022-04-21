@@ -1,21 +1,22 @@
 
 
-const checkAge = function (age){
+function checkAge(age){
 
-age = Number(age)
-    if(isNaN(age) || age=='' || age==' ') {  
-        console.log("EROR, enter your age ")
-    } else {
+    if(+age) {  
+        
         if(age < 18) {
-            console.log("You don't have access cause your age is " + age + " It's less then 18")
+            alert("You don't have access cause your age is " + age + " It's less then 18")
         } else if(age >= 18 && age < 60) {
-        console.log("Welcome   !")
+            alert("Welcome   !")
         } else if(age > 60) {
-            console.log ("Keep calm and look Culture channel")
-        }  else {
-            console.log("Technical work")
-        }
+            alert("Keep calm and look Culture channel")
+        }  
+        else {
+            alert("Technical work")
+        } 
+    } 
+    else { alert("EROR, enter your age ")
     } 
 }
-       checkAge ('22в')
-     
+
+checkAge(prompt("Ваш возраст?",'18'))
