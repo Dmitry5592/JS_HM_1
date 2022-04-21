@@ -1,8 +1,8 @@
-function checkAge(age){
+const checkAge = function (age){
 
 
 if(age < 18) {
-    console.log(`"You don't have access cause your age is"  age  "It's less then"`)
+    console.log("You don't have access cause your age is " + age + " It's less then 18")
 } 
     else if(age >= 18 && age < 60) {
     console.log("Welcome   !")
@@ -14,4 +14,4 @@ if(age < 18) {
         console.log("Technical work")
     }
 }
-checkAge (14)
+checkAge (10)
